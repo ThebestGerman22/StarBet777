@@ -35,6 +35,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btSpin = new System.Windows.Forms.Button();
             this.tmrSpin = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.lbxUltimos = new System.Windows.Forms.ListBox();
+            this.chbVitorias = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -82,9 +85,11 @@
             // 
             // btSpin
             // 
+            this.btSpin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btSpin.BackColor = System.Drawing.Color.SpringGreen;
             this.btSpin.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSpin.Location = new System.Drawing.Point(275, 385);
+            this.btSpin.Location = new System.Drawing.Point(275, 398);
             this.btSpin.Name = "btSpin";
             this.btSpin.Size = new System.Drawing.Size(248, 53);
             this.btSpin.TabIndex = 4;
@@ -97,13 +102,39 @@
             // 
             this.tmrSpin.Tick += new System.EventHandler(this.tmrSpin_Tick);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // lbxUltimos
+            // 
+            this.lbxUltimos.FormattingEnabled = true;
+            this.lbxUltimos.Location = new System.Drawing.Point(275, 457);
+            this.lbxUltimos.Name = "lbxUltimos";
+            this.lbxUltimos.Size = new System.Drawing.Size(248, 95);
+            this.lbxUltimos.TabIndex = 7;
+            // 
+            // chbVitorias
+            // 
+            this.chbVitorias.AutoSize = true;
+            this.chbVitorias.Location = new System.Drawing.Point(530, 457);
+            this.chbVitorias.Name = "chbVitorias";
+            this.chbVitorias.Size = new System.Drawing.Size(75, 17);
+            this.chbVitorias.TabIndex = 8;
+            this.chbVitorias.Text = "So vitorias";
+            this.chbVitorias.UseVisualStyleBackColor = true;
+            this.chbVitorias.CheckedChanged += new System.EventHandler(this.chbVitorias_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StarBet777.Properties.Resources.f1ukeu6xoaazlv8;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 564);
+            this.Controls.Add(this.chbVitorias);
+            this.Controls.Add(this.lbxUltimos);
             this.Controls.Add(this.btSpin);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -125,6 +156,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btSpin;
         private System.Windows.Forms.Timer tmrSpin;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ListBox lbxUltimos;
+        private System.Windows.Forms.CheckBox chbVitorias;
     }
 }
 
