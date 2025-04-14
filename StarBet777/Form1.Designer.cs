@@ -114,6 +114,7 @@
             this.lbxUltimos.Name = "lbxUltimos";
             this.lbxUltimos.Size = new System.Drawing.Size(248, 95);
             this.lbxUltimos.TabIndex = 7;
+            this.lbxUltimos.SelectedIndexChanged += new System.EventHandler(this.lbxUltimos_SelectedIndexChanged);
             // 
             // chbVitorias
             // 

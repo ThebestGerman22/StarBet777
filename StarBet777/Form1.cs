@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -94,7 +95,9 @@ namespace StarBet777
                 {
                     MessageBox.Show("Você ganhou!");
                 }
-                lbxUltimos.Items.Add($"{roleta[0]} - {roleta[1]} - {roleta[2]}");
+                if(!chbVitorias.Checked || (roleta[0] == roleta[1] && roleta[1] == roleta[2]))
+                   lbxUltimos.Items.Add($"{roleta[0]} - {roleta[1]} - {roleta[2]}");
+
             }
 
 
@@ -120,6 +123,7 @@ namespace StarBet777
                     string[] nums = item.Split('-');
                     if (nums[0] == nums[1] && nums[1] == nums[2])
                         lbxUltimos.Items.Add(item);
+
                 }
             }
             else
@@ -130,6 +134,11 @@ namespace StarBet777
                     lbxUltimos.Items.Add(item);
                 }
             }
+        }
+
+        private void lbxUltimos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
