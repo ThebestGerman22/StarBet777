@@ -89,11 +89,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btSpin.BackColor = System.Drawing.Color.SpringGreen;
             this.btSpin.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSpin.Location = new System.Drawing.Point(275, 398);
+            this.btSpin.Location = new System.Drawing.Point(275, 386);
             this.btSpin.Name = "btSpin";
             this.btSpin.Size = new System.Drawing.Size(248, 53);
             this.btSpin.TabIndex = 4;
-            this.btSpin.Text = "CLIQUE AQUI PARA JOGAR!";
+            this.btSpin.Text = "&GIRAR";
             this.btSpin.UseCompatibleTextRendering = true;
             this.btSpin.UseVisualStyleBackColor = false;
             this.btSpin.Click += new System.EventHandler(this.btSpin_Click);
@@ -121,12 +121,11 @@
             this.chbVitorias.AutoSize = true;
             this.chbVitorias.Location = new System.Drawing.Point(530, 457);
             this.chbVitorias.Name = "chbVitorias";
-            this.chbVitorias.Size = new System.Drawing.Size(75, 17);
+            this.chbVitorias.Size = new System.Drawing.Size(60, 17);
             this.chbVitorias.TabIndex = 8;
-            this.chbVitorias.Text = "So vitorias";
+            this.chbVitorias.Text = "&Vitórias";
             this.chbVitorias.UseVisualStyleBackColor = true;
-            this.chbVitorias.CheckedChanged += new System.EventHandler(this.chbVitorias_CheckedChanged);
-            // 
+            this.chbVitorias.CheckedChanged += new System.EventHandler(this.chbVitorias_CheckedChanged);            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +143,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

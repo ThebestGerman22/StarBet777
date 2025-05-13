@@ -29,6 +29,8 @@ namespace StarBet777
                 roleta[i] = r.Next(0, 10);
                 Update(i);
             }
+            this.KeyPreview = true;
+            this.KeyDown += Form1_KeyDown;
         }
 
         void Update(int i)
@@ -139,6 +141,23 @@ namespace StarBet777
         private void lbxUltimos_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+ 
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (ActiveControl == btSpin)
+                {
+                    btSpin.PerformClick();  
+                }
+                else if (ActiveControl == chbVitorias)
+                {
+                    chbVitorias.Checked = !chbVitorias.Checked;  
+                }
+            }
         }
     }
 }
